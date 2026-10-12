@@ -1,7 +1,7 @@
 import AuthScreen from './AuthScreen';
 import { useEffect, useState } from 'react';
 import './App.css';
-const BACKEND_URL = 'http://localhost:8080/api/hello';
+const BACKEND_URL = 'https://flixo-backend-1.onrender.com/api/hello';
 const MAX_PROFILES = 5;
 
 const avatarOptions = [
