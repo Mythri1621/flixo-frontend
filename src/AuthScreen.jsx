@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 
-const API_URL = 'http://localhost:8080/api/auth';
+const API_URL = 'https://flixo-backend-1.onrender.com/api/auth';
 
 export default function AuthScreen({ onSuccess }) {
   const [isSignup, setIsSignup] = useState(true);
@@ -49,7 +48,7 @@ export default function AuthScreen({ onSuccess }) {
     } catch (error) {
       setMessage(
         error.message === 'Failed to fetch'
-          ? 'Cannot connect to FLIXO server. Make sure your Spring Boot backend is running.'
+          ? 'Cannot connect to FLIXO server. Please check the backend connection.'
           : error.message
       );
       setMessageType('error');
